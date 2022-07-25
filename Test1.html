@@ -1,0 +1,384 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // // // //  1. Factorial program type 1
+        // let n = prompt("Enter positive number");
+        // function factorial() {
+        //     if(isFinite(n) == false || n < 0 ) alert("please enter correct number");
+        //     let answer = 1;
+        //     if (n == 0 || n == 1) {
+        //         return answer;
+        //     }
+        //     else {
+        //         for (let i = n; i >= 1; i--) {
+        //             answer = answer * i;
+        //         }
+        //     }
+        //     return answer;
+        // }
+        // console.log(factorial());
+
+        // // // //  1. Factorial program type 2
+
+        // function factorial(n) {
+        // // base case
+        //     if (n == 0 || n == 1)
+        //         return n;
+        // // recursive case :- Greater memory requirments as all the function calls
+        // // remain on the stack untill the base case is reached.
+        //     else {
+        //         return n * factorial(n - 1);
+        //     }
+        // }
+        // console.log(factorial(5));
+
+
+
+
+
+
+
+
+        // // // // 2. fibonacci program
+        //     let number = prompt("Please enter a number");
+        // function fibonacci(){
+        //     if(isFinite(number) == false || number < 0) return("Please enter correct number");
+        //     let n1 = 0 , n2 = 1 , nextTerm;
+        //     for(let i = 1; i <= number; i++){
+        //         console.log(n1);
+        //         nextTerm = n1 + n2;
+        //         n1 = n2;
+        //         n2 = nextTerm;
+        //     }
+        // }
+        // console.log(fibonacci());
+
+
+
+
+
+        // // // // 3. program for check a prime number
+        //     let num = prompt("Please enter a number");
+        // function isPrime() {
+        //     if(isFinite(num) == false || num < 0) return alert("Please enter correct number");
+        //     for (var i = 2; i < num; i++)
+        //         if (num % i === 0) return false;
+        //     return num > 1;
+        // }
+        // console.log(isPrime());
+
+
+
+
+
+
+        // // // // 3. program for check a prime number
+
+        // const number = +prompt("Enter a positive number: ");
+        // let isPrime = true;
+        // function isPrimeNumber() {
+
+        //     if (number === 1) {
+        //         console.log("1 is neither prime nor composite number.");
+        //     }
+        //     else if (number > 1) {
+        //         for (let i = 2; i < number; i++) {
+        //             if (number % i == 0) {
+        //                 isPrime = false;
+        //                 break;
+        //             }
+        //         }
+        //         if (isPrime) {
+        //             console.log(`${number} is a prime number`);
+        //         } else {
+        //             console.log(`${number} is a not prime number`);
+        //         }
+        //     }
+        //     else {
+        //         console.log("The number is not a prime number.");
+        //     }
+        // }
+        // isPrimeNumber();
+
+
+
+
+
+
+
+
+
+        // // // // 4. Addition program type 1
+
+        // function sum(a, b) {
+        //     return a + b;
+        // }
+        // console.log(sum(5, 6));
+
+        // // // // 4. Addition program type 2
+
+        // let sum = (function (a, b) {
+        //     return a + b;
+        // })(9, 10);
+        // console.log(sum);
+
+
+
+
+
+
+
+
+
+
+
+
+        // // // // 5.  Multiplication program type 1
+
+        // function mul(a, b) {
+        //     console.log(a * b);
+        // }
+        // mul(2, 3);
+
+        // // // // 5. Multiplication program type 2
+
+        // let a = +prompt("Enter first a");
+        // let b = +prompt("Enter Second number");
+        // function mul(x , y){
+        //     return a * b;
+        // }
+        // console.log(mul());
+
+
+
+
+
+
+
+
+
+        // // // // 6. Find largest number from array
+
+        // let arr = [12, 13, 5, 9, 11, 20, 18];
+        // function findMax() {
+        //     let max = arr[0];
+        //     for(let i = 0; i <= arr.length; i++){
+
+        //         if(arr[i] > max){
+        //             max = arr[i];
+
+        //         }
+        //     }
+        //     console.log(max);
+
+
+        //     // let max = Math.max(...arr);
+        //     // console.log(max);
+        // }
+        // findMax();
+
+
+
+
+
+
+
+
+
+        // // // // 7. Find smallest number from array
+
+        // let arr = [12, 13, 5, 9, 2, 1, 11, 20, 18];
+        // function findMin() {
+        //     let min = arr[0];
+        //     for(let i = 0; i <= arr.length; i++){
+        //         if(min > arr[i]){
+        //             min = arr[i];
+        //         }
+        //     }
+        //     console.log(min);
+        //     // let min = Math.min(...arr);
+        //     // console.log(min);
+        // }
+        // findMin();
+
+
+
+
+
+
+
+        // // // // 8. Search in array and outputs true/false
+        // let arr = [1, 3, 12, 8, 10, 15, 'ab', 21, 18];
+        // let n = prompt("Enter value to search");
+        // function searchInArray() {
+        //     for (i = 0; i <= arr.length; i++) {
+        //         if (n == arr[i]) {
+        //             return console.log("true");
+        //         }
+        //     }
+        //     console.log("false");
+
+        //     // return arr.includes(n);
+        // }
+        // searchInArray();
+
+
+
+
+
+        // // // // 9. Function reverse string
+
+        // let arr = ["Akash",'Aakash', "Ujjawal", "Arjun", "Rohit"];
+        // function reverseString() {
+        //     let reverseString = new Array;
+        //     for(let i = arr.length; i >= 0; i--){
+        //         reverseString.push(arr[i]);
+        //     }
+
+        //     // arr.sort();
+        //     // arr.reverse();
+
+        //     console.log(reverseString);
+        // }
+        // reverseString();
+
+
+
+        // // // // 9. Function reverse string
+
+        // function reverseArr(input) {
+        //     var reverseString = new Array;
+        //     for (let i = input.length - 1; i >= 0; i--) {
+        //         reverseString.push(input[i]);
+        //     }
+        //     console.log(reverseString);
+        // }
+
+        // var a = ['a', 'b', 's', 'f'];
+        // var b = reverseArr(a);
+
+
+
+
+
+        // // // // 10. To find a length of a string
+
+        // let value = "string";
+        // function findLenString() {
+        //     return value.length;
+        // }
+        // console.log(findLenString());
+
+
+
+
+
+
+        // // // // 11. program to find array length
+
+        // let arr = [12, 25, 57, 21, 15, 22];
+        // function arrLength(){
+        //         return arr.length;
+        //     };
+        //     console.log(arrLength());
+
+
+
+
+
+
+        // // // // 12. Find area of a triangle
+
+        // function triangleArea(base, height){
+        //     let area = (base * height) / 2 ;
+        //     return area;
+        // }
+        // console.log(triangleArea(5 , 7));
+
+
+
+
+
+
+        // // // // 13. Create a function to find the prime number till the given number
+
+        // function PrimetillN() {
+        //     var lim = prompt('Enter the limit ');
+        //     let s = '';
+        //     for (let j = 2; j <= lim; j++) {
+        //         let cv = 0;
+        //         for (let i = 2; i < j; i++) {
+        //             if (j % i == 0)
+        //                 cv++;
+        //         }
+        //         if (cv == 0)
+        //             s += j + ",";
+        //     }
+        //     console.log(s);
+        // }
+        // PrimetillN();
+
+
+
+
+
+
+
+
+        // // // // 14. To find square root
+
+        // function squareRoot(n) {
+        //     console.log(n ** (1/2));
+        // }
+        // squareRoot(4);
+
+
+
+
+
+        // // // // 15. Sorting Array type 1
+
+        // let arr = [37, 86, 1, 7, 25, 251, 10];
+        // function sortingArray() {
+        //     // By default, the sort() function sorts values as strings
+        //     // using compare function for this
+        //     arr.sort(function (a, b) {
+        //         return a - b
+        //     });
+        //     console.log(arr);
+        // }
+        // sortingArray();
+
+
+        // // // // 15. Sorting Array type 2
+
+        // let arr = ["Akash", "Ujjawal", 'Arjun', 6 ,  "Rohit"];
+        // function sortingArray(){
+
+        //     arr.sort();
+        //     console.log(arr);
+
+        // }
+        // sortingArray();
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
