@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // // // // Convert Decimal to Binary
+
+        let num = 12;
+       let binary = [];
+        function isBinary(){
+            while(num>0){
+                if(num % 2 === 0){
+                    binary.push(0);
+                } else  binary.push(1);
+            num=Math.floor(num/2);
+            }
+            binary=binary.reverse();
+            binary=binary.join('');
+            console.log(binary);
+        }
+        // isBinary(); 
+
+    </script>
+</body>
+</html>
