@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // In this program i make a clone of "user" object as "clone" and add a property(subject) in 
+        // it and the user does not affect it. The properties of "user" object are same.
+
+        // let user = {
+        //     name: "Aakash",
+        //     age: 23,
+        //     user1: {
+        //         name: "Chitranshu",
+        //         user2: {
+        //             name: "Vikas",
+        //             user3: {
+        //                 name: "Aman",
+        //                 user4: {
+        //                     name: "Rohit"
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        // console.log(user.user1.user2.user3.user4.name);
+
+        // let clone = {};
+
+        // for (let key in user) {
+        //     clone[key] = user[key];
+        // }
+        // console.log(clone.user1.user2.user3.user4.name);
+
+        // clone.subject = "English";
+        // clone.name = "Akki";
+        // console.log(clone);
+
+        // console.log(user);
+
+
+
+        // ..............................................................................
+
+        // A closure is the combination of a function bundled together (enclosed) 
+        // with references to its surrounding state (the lexical environment). 
+        // In other words, a closure gives you access to an outer function's scope 
+        // from an inner function.
+
+
+        //    let oneTimeFun = (function() {
+        //         let executed = false;
+        //         return function () {
+        //             if (!executed) {
+        //                 executed = true;
+        //                 console.log("executed");
+        //             }
+        //         }
+        //     })();
+        //     oneTimeFun();
+        //     oneTimeFun();
+        //     oneTimeFun();
+
+
+
+        // ....................................................................................
+
+
+
+        // let count = 0;
+        // countFun = (function () {
+        //     return function () {
+        //         count = ++count;
+        //         console.log(count);
+        //     }
+        // })();
+        // countFun();
+        // countFun();
+        // countFun();
+
+
+
+        //....................................................................................
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

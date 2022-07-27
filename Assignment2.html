@@ -1,32 +1,523 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
 
-        // // // // Convert Decimal to Binary
+        // // // // 1. String is Palindrome or Not
+
+
+
+
+
+        //...........................................................................
+
+        // // // // 2. Convert Decimal to Binary
 
         let num = 12;
-       let binary = [];
-        function isBinary(){
-            while(num>0){
-                if(num % 2 === 0){
+        let binary = [];
+        function isBinary() {
+            while (num > 0) {
+                if (num % 2 === 0) {
                     binary.push(0);
-                } else  binary.push(1);
-            num=Math.floor(num/2);
+                } else binary.push(1);
+                num = Math.floor(num / 2);
             }
-            binary=binary.reverse();
-            binary=binary.join('');
+            binary = binary.reverse();
+            binary = binary.join('');
             console.log(binary);
 
         }
-        alert("Chitranshu is a best person");
-        // isBinary(); 
+        // isBinary();
+
+
+
+
+        //./..........................................................................
+
+
+
+
+        // // // //  3. ASCII Value of Character Using charCodeAt()
+
+        // let x = 'C';
+        // let asciiCode = x.charCodeAt(0);
+        // console.log(asciiCode);
+
+
+
+
+        // ......................................................................
+
+
+
+
+        // / // / //  4. ASCII Value of Character Using codePointAt()
+
+        // let y = 'D';
+        // let asciicode = y.codePointAt(0);
+        // console.log(asciicode);
+
+
+
+        //........................................................................
+
+
+
+        // // // //  9. Check the Number of Occurrences of a Character in the String
+
+        // function countString(str, letter) {
+        //     let count = 0;
+
+        //     for (let i = 0; i < str.length; i++) {
+
+        //         if (str.charAt(i) === letter) {
+        //             count += 1;
+        //         }
+        //     }
+        //     return count;
+        // }
+
+        // const string = prompt('Enter a string: ');
+        // const letterToCheck = prompt('Enter a letter to check: ');
+
+        // const result = countString(string, letterToCheck);
+
+        // console.log(`"${letterToCheck}" Letter are comes : ` + result + " times");
+
+
+
+
+
+            //..............................................................................
+
+
+
+
+        // // // //  10. Convert the First Letter of a String into UpperCase
+
+        // let str = 'akash';
+        // function uppercase1() {
+        //     console.log(str[0].toUpperCase() + str.slice(1));
+
+        // }
+        // uppercase1();
+
+
+
+
+
+        //................................................................................
+
+
+
+
+
+
+        // // // //       11. Count the Number of Vowels in a String
+
+
+        // function vowelsCount(str){
+        //     const count = str.match(/[aeiou]/gi).length;
+        //     return count;
+        // }
+        // let string = prompt("Enter string :");
+        // let result = vowelsCount(string);
+        // console.log(result);
+
+
+
+
+
+
+
+
+        //     function vowelsCount(str){
+        //         let c=0;
+        //         for(i = 0; i < str.length; i++){
+        //             if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u'){
+        //                 c++;
+        //             }
+        //         }
+        //     alert(c);
+        // }
+        // vowelsCount('Chitranshu');
+
+
+
+
+
+
+        //................................................................................
+
+
+
+
+
+
+        // // // //  12. remove a property from an object
+
+        // let user = {
+        //     name: "Akash",
+        //     age: 23,
+        //     isAdmin: false
+        // }
+
+        // console.log(Object.keys(user));
+        // delete user.age;
+        // console.log(Object.keys(user));
+
+
+
+
+
+        //................................................................................
+
+
+
+
+
+
+
+        // /// /// / / /      13. Check Whether a String Starts and Ends With Certain Characters
+
+        // let str = prompt("Enter a string : ");
+        // let letter1 = prompt("Enter first letter : ");
+        // let letter2 = prompt("Enter second letter : ");
+
+        //     function startEnd(){
+        //         if(str[0] == letter1 && str[str.length-1] == letter2){
+        //             console.log(true);
+        //         } else {console.log(false)
+        //         };
+        //     }
+        //     startEnd();
+
+
+
+
+
+        //................................................................................
+
+
+
+
+
+
+        // /// / //  // 14. Check if a Key Exists in an Object
+
+        // let user = {
+        //     name: "Akash",
+        //     age: 23,
+        //     value: "akash123"
+        // };
+        // // console.log('value' in user);
+        // for (let key in user){
+        //     if(key == 'age'){
+        //         console.log('true');
+        //     }
+        // };
+
+
+
+
+
+        //................................................................................
+
+
+
+
+
+
+        // /// // / // /   15. Clone a JS Object
+
+        // let user = {
+        //     name: "Akash",
+        //     age: 23,
+        //     value: "akash123"
+        // };
+
+        // console.log(Object.keys(user));
+
+        // // let user1 = user;
+        // // let user1 = {...user};
+        // // let user1 = Object.assign({}, user);
+
+
+        // console.log(Object.keys(user1));
+
+        // user1.isAdmin = true;
+        // console.log(Object.keys(user1));
+
+
+
+
+
+
+        //................................................................................
+
+
+
+
+
+
+
+        // // // / / / / 16. Loop Through Object Using for...in
+
+        // let user = {
+        //     name: "Akash",
+        //     age: 23,
+        //     value: "akash123"
+        // };
+        // for (let key in user){
+        //     if(key == 'age'){
+        //         console.log('true');
+        //     }
+        // };
+
+
+
+
+        //................................................................................
+
+
+
+
+
+
+        // / / / / //// /// // 17. Merge Property of Two Objects
+
+
+        // let user1 = {
+        //     name: "Akash",
+        //     sName: "Sharma",
+        //     age: 23
+        // };
+
+        // let user2 = {
+        //     name: "Chitranshu",
+        //     sName: "Sharma",
+        //     AGE: 50
+        // }
+
+        // let merged = { ...user1, ...user2 };
+        // console.log(Object.keys(merged));
+
+
+
+
+
+        //................................................................................
+
+
+
+
+
+
+        // // // // 18. Count the Number of Keys/Properties in an Object
+
+        // let user1 = {
+        //     name: "Akash",
+        //     sName: "Sharma",
+        //     age: 23,
+        //     abc: "Akash Sharma"
+        // };
+        // // console.log(Object.keys(user1).length);
+
+        // let count = 0;
+        // for(let key in user1){
+        //     ++count;
+        // }
+        // console.log(count);
+
+
+
+
+
+        //................................................................................
+
+
+
+
+
+
+        // // // // 19. JavaScript parseInt()
+
+        // console.log(
+        //     parseInt(23, 16), // 35 because it is converted 23 base 16 to 35 base 10
+        //     parseInt(11.11),
+        //     parseInt("10", 10) ,
+        //     parseInt("010") ,
+        //     parseInt("10", 8) , // it is taking intiger first
+        //     parseInt("0x10"),
+        //     parseInt("10", 16)
+        // );
+
+
+
+
+
+
+        //................................................................................
+
+
+
+
+
+        // // // //    20. Arrow function in an object
+
+        // let user = {
+        //     name: "Akash",
+        //     age: 23,
+        //     fun: (num) => {
+        //         if (num >= 1){
+        //             console.log('true');
+        //         }
+        //         else console.log('false');
+        //     }
+        // }
+        // user.fun(4);
+
+
+
+
+
+        //................................................................................
+
+
+
+
+
+
+            // /// /// / //  21. Generate Random Strings
+
+        // let demoStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234567890";
+        // function generateStr(length) {
+        //     strLen = demoStr.length;
+        //     let result = '';
+        //     for (i = 0; i < length; i++) {
+
+        //         result += demoStr.charAt(Math.floor(Math.random() * strLen));
+        //     }
+        //     console.log(result);
+        // }
+        // generateStr(6);
+
+
+
+
+
+        //................................................................................
+
+
+
+
+            // // // //  22. Check if a String Starts With Another String
+
+            // let str1 = 'Akash Sharma';
+            // let str2 = 'Aka';
+            // let str2Len = str2.length; 
+
+            // function checkStr(){
+            //     if(str2 == str1.substring(0, str2Len)){
+            //         console.log('true');
+            //     } else console.log('false');
+            // }
+            // checkStr();
+
+
+
+
+
+        //................................................................................
+
+
+
+
+           // // // //  23. Program to Trim a String
+
+        //    let str = '    Akash    ';
+        //    console.log(str);
+        //    const trimStr = str.trim(); // trim() removes white spaces 
+        //    console.log(trimStr);  
+
+
+
+        //................................................................................
+
+
+
+
+
+
+        // // // //   24. Convert Object to String
+
+                // let user = {
+                //     name: "Akash",
+                //     age: 23
+                // }
+                // str = JSON.stringify(user);
+                // console.log(str);
+
+
+
+        //................................................................................
+
+
+
+
+
+
+        // // // //  25. Remove a char from a String
+
+        // let str = "Akash";
+        // let result = str.replace("k", '');
+        // console.log(result); 
+
+
+
+
+        //................................................................................
+
+
+
+       //// //// / // /  26. String to Base64  
+       
+    //    let str = "Akash";
+    //    let result = btoa(str);
+    //    console.log(result); // QWthc2g=
+
+
+
+
+        //................................................................................
+
+                    
+
+
+       // // / /   27. Base64 to a string
+
+    //    let str1 = "QWthc2g=";
+    //    let result1 = atob(str1);
+    //    console.log(result1); // Akash
+
+
+        
+        //................................................................................
+
+
+
+
+
 
     </script>
 </body>
+
+
 </html>
