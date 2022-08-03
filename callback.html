@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function myDisplayer(result) {
+        //     console.log(result);
+        // }
+        // function addNum(a, b, myCallback) {
+        //     sum = a + b;
+        //     myCallback(sum);
+        // }
+        // addNum(5, 6, myDisplayer);
+
+
+        //.................................................................................
+
+        // setTimeout(myFunction, 3000);
+
+        // function myFunction() {
+        //     console.log("called");
+        // }
+
+        //.................................................................................
+
+        
+        let myPromise = new Promise(function (myResolve, myReject) {
+            let count = true;
+
+           myResolve = setTimeout(() => {
+                if(count == true){
+                    console.log(true);
+                }
+                else myReject("rejected");
+            }, 2000);
+            
+
+        //    myResolve(count = ++count);
+            // setTimeout(() => myReject("occured"), 3000);
+
+        });
+
+        myPromise.then(function (value) {
+            console.log(value);
+        },
+            function (error) {
+                console.log(error);
+            });
+
+
+    </script>
+</body>
+
+</html>

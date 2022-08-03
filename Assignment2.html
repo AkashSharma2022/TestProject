@@ -95,7 +95,7 @@
 
 
 
-            //..............................................................................
+        //..............................................................................
 
 
 
@@ -268,12 +268,12 @@
 
 
 
+        
         // // // / / / / 16. Loop Through Object Using for...in
-
         // let user = {
-        //     name: "Akash",
-        //     age: 23,
-        //     value: "akash123"
+            //     name: "Akash",
+            //     age: 23,
+            //     value: "akash123"
         // };
         // for (let key in user){
         //     if(key == 'age'){
@@ -395,7 +395,7 @@
 
 
 
-            // /// /// / //  21. Generate Random Strings
+        // /// /// / //  21. Generate Random Strings
 
         // let demoStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234567890";
         // function generateStr(length) {
@@ -418,18 +418,18 @@
 
 
 
-            // // // //  22. Check if a String Starts With Another String
+        // // // //  22. Check if a String Starts With Another String
 
-            // let str1 = 'Akash Sharma';
-            // let str2 = 'Aka';
-            // let str2Len = str2.length; 
+        // let str1 = 'Akash Sharma';
+        // let str2 = 'Aka';
+        // let str2Len = str2.length; 
 
-            // function checkStr(){
-            //     if(str2 == str1.substring(0, str2Len)){
-            //         console.log('true');
-            //     } else console.log('false');
-            // }
-            // checkStr();
+        // function checkStr(){
+        //     if(str2 == str1.substring(0, str2Len)){
+        //         console.log('true');
+        //     } else console.log('false');
+        // }
+        // checkStr();
 
 
 
@@ -440,12 +440,29 @@
 
 
 
-           // // // //  23. Program to Trim a String
+        // // // //  23. Program to Trim a String
 
         //    let str = '    Akash    ';
         //    console.log(str);
-        //    const trimStr = str.trim(); // trim() removes white spaces 
-        //    console.log(trimStr);  
+
+
+        // //    const trimStr = str.trim(); // trim() removes white spaces 
+        // //    console.log(trimStr);  
+
+        //         let i = 0;
+        // while(str[i] == ' '){
+        //     i++;
+        // }
+        // str = str.slice(i);
+
+        // let j = str.length-1;
+        // while(str[j] == ' '){
+        //     j--;
+        // }
+        // str = str.slice(0, j + 1);
+        // console.log(str);
+        // console.log(str.length);
+
 
 
 
@@ -458,12 +475,17 @@
 
         // // // //   24. Convert Object to String
 
-                // let user = {
-                //     name: "Akash",
-                //     age: 23
-                // }
-                // str = JSON.stringify(user);
-                // console.log(str);
+        // let user = {
+        //     name: "Akash",
+        //     age: 23
+        // }
+        // str = JSON.stringify(user);
+        // console.log(str);
+
+
+
+
+
 
 
 
@@ -487,29 +509,98 @@
 
 
 
-       //// //// / // /  26. String to Base64  
-       
-    //    let str = "Akash";
-    //    let result = btoa(str);
-    //    console.log(result); // QWthc2g=
+        //// //// / // /  26. String to Base64  
+
+        //    let str = "Akash";
+        //    let result = btoa(str);
+        //    console.log(result); // QWthc2g=
 
 
 
 
         //................................................................................
 
-                    
 
 
-       // // / /   27. Base64 to a string
 
-    //    let str1 = "QWthc2g=";
-    //    let result1 = atob(str1);
-    //    console.log(result1); // Akash
+        // // / /   27. Base64 to a string
+
+        //    let str1 = "QWthc2g=";
+        //    let result1 = atob(str1);
+        //    console.log(result1); // Akash
 
 
-        
+
         //................................................................................
+
+
+
+        // // / // ///   29. Pyramid star pattern
+
+        // let output = '';
+        // for (i = 1; i <= 5; i++) {
+        //     for (j = 1; j <= i; j++) {
+        //         output += "*" + " ";
+        //     }
+        //     output += "\n"; 
+        // }
+        // console.log(output);
+
+
+
+
+                // let n = 5;
+        // let output = '';
+        // for (i = 1; i <= n; i++) {
+        //     for (j = 1; j <= n - i; j++) {
+        //         output += " ";
+        //     }
+        //     for (k = 0; k < 2 * i - 1; k++) {
+        //         output += "*";
+        //     }
+        //     output += "\n";
+        // }
+        // console.log(output);
+
+
+        //..................................................................................
+
+
+
+        //// /// /// // 30. Reverse Pyramid star pattern
+
+        // let n = 5;
+        // let output = '';
+        // for (i = 0; i <= n; i++) {
+        //     for (j = 0; j < n - i; j++) {
+        //         output += "*" + " ";
+        //     }
+        //     output += "\n";
+        // }
+        // console.log(output);
+
+
+
+
+
+
+        // let n = 5;
+        // let output = '';
+        // for (i = 1; i <= n; i++) {
+        //     for (j = 1; j <= i; j++) {
+        //         output += " ";
+        //     }
+        //     for (k = 0; k < 2 * (n - i) - 1; k++) {
+        //         output += "*";
+        //     }
+        //     output += "\n";
+        // }
+        // console.log(output);
+
+
+
+
+
 
 
 

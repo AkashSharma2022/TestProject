@@ -10,8 +10,198 @@
 <body>
     <script>
 
-        // In this program i make a clone of "user" object as "clone" and add a property(subject) in 
-        // it and the user does not affect it. The properties of "user" object are same.
+        // let user = {
+        //     name: "Aakash",
+        //     age: 23,
+        //     user1: {
+        //         name: "Chitranshu",
+        //         user2: {
+        //             name: "Vikas",
+        //             user3: {
+        //                 name: "Aman",
+        //                 user4: {
+        //                     name: "Rohit"
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+
+        // const clone = {...user};
+
+        // for (let key in user) {
+        //     clone[key] = user[key];
+        // }
+
+        // console.log(clone.user1.name);
+        // console.log(user.user1.name);
+        // clone.user1.name = "Akki";
+
+        // console.log(clone.user1.name);
+        // console.log(user.user1.name);
+
+
+
+
+
+
+        // ..............................................................................
+
+        // A closure is the combination of a function bundled together (enclosed) 
+        // with references to its surrounding state (the lexical environment). 
+        // In other words, a closure gives you access to an outer function's scope 
+        // from an inner function.
+
+
+        // let oneTimeFun = (function () {
+        //     console.log("executed");
+        //     let executed = false;
+        //     return function () {
+        //         if (!executed) {
+        //             executed = true;
+        //         }
+        //     }
+        // })();
+        //     oneTimeFun();
+        //     oneTimeFun();
+        //     oneTimeFun();
+
+
+
+        //.................................................................................
+
+
+
+
+        // function something() {
+        //     let executed = false;
+
+        //     return function () {
+        //         if (!executed) {
+        //             executed = true;
+        //             console.log("executed");
+        //         }
+        //     };
+        // };
+
+        // let newFun = something();
+
+        // newFun();
+        // newFun();
+
+
+
+
+
+
+        // ....................................................................................
+
+
+
+        //     function countFun() {
+        //     let count = 0;
+        //     return function () {
+        //         count = ++count;
+        //         console.log(count);
+        //     }
+        // };
+        // let newFun  = countFun();
+        // newFun();
+        // newFun();
+        // newFun();
+
+
+
+
+
+        //....................................................................................
+
+
+
+
+
+        // let promise = new Promise(function(resolve, reject){
+        //     resolve("resolve");
+        // });
+        // promise.then(alert);
+
+
+
+        // ..........................................................................
+
+
+
+        // let c = 0;
+        // let a = (function () {
+        //     if (c == 0) {
+        //         c++;
+        //         return function () {
+        //             alert('one time');
+        //         }();
+        //     }
+        //     else alert('error');
+        // });
+        // a();
+        // a();
+        // a();
+
+
+
+
+        //...............................................................................
+
+
+
+        // function job() {
+        //     return new Promise(function (resolve, reject) {
+        //         reject();
+        //     });
+        // }
+
+        // let promise = job();
+
+        // promise
+
+        //     .then(function () {
+        //         console.log('Success 1');
+        //     })
+
+        //     .then(function () {
+        //         console.log('Success 2');
+        //     })
+
+        //     .then(function () {
+        //         console.log('Success 3');
+        //     })
+
+        //     .catch(function () {
+        //         console.log('Error 1');
+        //     })
+
+        //     .then(function () {
+        //         console.log('Success 4');
+        //     });
+
+
+
+
+
+        //...............................................................................
+
+
+
+        // function fun() {
+        //     setTimeout(function () {
+        //         console.log("set time out called");
+        //     }, 3000)
+        // }
+        // fun();
+
+
+        //...............................................................................
+
+
 
         // let user = {
         //     name: "Aakash",
@@ -29,70 +219,202 @@
         //         }
         //     }
         // }
-        // console.log(user.user1.user2.user3.user4.name);
 
-        // let clone = {};
+        // let cloning = {};
+        // let superClone = (object) => {
 
-        // for (let key in user) {
-        //     clone[key] = user[key];
+        //     Object.keys(object).map(prop => {
+        //         if (Array.isArray(object[prop])) {
+        //             cloning[prop] = [].concat(object[prop])
+        //         } else if (typeof object[prop] === 'object') {
+        //             cloning[prop] = superClone(object[prop])
+        //         } else cloning[prop] = object[prop]
+        //     })
+
+        //     return cloning;
         // }
-        // console.log(clone.user1.user2.user3.user4.name);
+        // console.log(superClone(user));
 
-        // clone.subject = "English";
-        // clone.name = "Akki";
-        // console.log(clone);
+        // cloning.user1.name = "Akki";
+        // console.log(cloning.user1.name);
 
-        // console.log(user);
-
+        // console.log(user.user1.name);
 
 
-        // ..............................................................................
-
-        // A closure is the combination of a function bundled together (enclosed) 
-        // with references to its surrounding state (the lexical environment). 
-        // In other words, a closure gives you access to an outer function's scope 
-        // from an inner function.
 
 
-        //    let oneTimeFun = (function() {
-        //         let executed = false;
-        //         return function () {
-        //             if (!executed) {
-        //                 executed = true;
-        //                 console.log("executed");
+        //.............................................................................
+
+
+        // let user = {
+        //     name: "Aakash",
+        //     age: 23,
+        //     user1: {
+        //         name: "Chitranshu",
+        //         user2: {
+        //             name: "Vikas",
+        //             user3: {
+        //                 name: "Aman",
+        //                 user4: {
+        //                     name: "Rohit"
+        //                 }
         //             }
         //         }
-        //     })();
-        //     oneTimeFun();
-        //     oneTimeFun();
-        //     oneTimeFun();
-
-
-
-        // ....................................................................................
-
-
-
-        // let count = 0;
-        // countFun = (function () {
-        //     return function () {
-        //         count = ++count;
-        //         console.log(count);
         //     }
-        // })();
-        // countFun();
-        // countFun();
-        // countFun();
+        // }
+
+        // let clone = structuredClone(user);
+        // clone.user1.name = "Akki";
+        // console.log(clone.user1.name);
+        // console.log(user.user1.name);
 
 
 
-        //....................................................................................
+        //..................................................................................
+
+
+        // let user = {
+        //     name: "Aakash",
+        //     age: 23,
+        //     user1: {
+        //         name: "Chitranshu",
+        //         user2: {
+        //             name: "Vikas",
+        //             user3: {
+        //                 name: "Aman",
+        //                 user4: {
+        //                     name: "Rohit"
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+
+        // let clone = JSON.stringify(user);
+        // clone = JSON.parse(clone);
+        // clone.user1.name = "Akki";
+        // console.log(user.user1.name);
+        // console.log(clone.user1.name);
 
 
 
 
+        //..................................................................................
 
 
+
+        // let obj = {
+        //     name: "Aakash",
+        //     age: 23,
+        //     user1: {
+        //         name: "Chitranshu",
+        //         user2: {
+        //             name: "Vikas",
+        //             user3: {
+        //                 name: "Aman",
+        //                 user4: {
+        //                     name: "Rohit"
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+        // const deepClone = (obj) => {
+        //     const deepClonedObject = {};
+        //     if(Array.isArray(obj)){
+
+        //         const clonedArray = [];
+        //         obj.forEach(e => {
+        //             clonedArray.push(deepClone(e));
+        //         });
+        //         return clonedArray;
+        //     }
+        //     for (const key in obj) {
+        //         deepClonedObject[key] = deepClone(obj[key]);
+        //     }
+        //     return deepClonedObject;
+        // }
+        // const clone = deepClone(obj);
+        // console.log(clone);
+
+
+
+
+        //.............................................................................
+
+
+
+        // let me = {
+        //     name: "Ashutosh Verma",
+        //     thisInArrow: () => {
+        //         console.log("My name is " + this.name); // no 'this' binding here
+        //     },
+        //     thisInRegular() {
+        //         console.log("My name is " + this.name); // 'this' binding works here
+        //     }
+        // };
+        // me.thisInArrow();
+        // me.thisInRegular();
+
+
+        //..............................................................................
+
+
+        // function add(a, b){
+        //     console.log(a + b);
+        // };
+        // new add(5, 6);// Working
+
+
+        // addd = (x, y) => {
+        //     console.log(x + y);
+        // };
+        // new addd(2, 3);// not working
+
+
+
+        //..........................................................................
+
+
+
+        // let myFunc = {
+        //     showArgs() {
+        //         console.log(...arguments);
+        //     }
+        // };
+        // myFunc.showArgs(1, 2, 3, 4);
+
+
+        // let myFunc = {
+        //     showArgs: () => {
+        //         console.log(...arguments);
+        //     }
+        // };
+        // myFunc.showArgs(1, 2, 3, 4);
+
+
+
+
+        //...........................................................................
+
+
+        // async function f() {
+
+        //     let promise = new Promise((resolve, reject) => {
+        //         setTimeout(() => resolve("done!"), 1000)
+        //     });
+
+        //     let result = await promise; // wait until the promise resolves (*)
+
+        //     alert(result); // "done!"
+        // }
+
+        // f();
+
+
+        //..............................................................................
 
 
     </script>
